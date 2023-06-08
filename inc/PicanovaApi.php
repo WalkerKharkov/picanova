@@ -19,6 +19,10 @@ class PicanovaApi
         return json_decode($this->request($this->product_url ));
     }
 
+    /**
+     * TASK 2
+     *
+     */
     public function getVariations($id)
     {
         global $picanova_changeable_options;
@@ -55,10 +59,16 @@ class PicanovaApi
         return $variations;
     }
 
+    /**
+     * TASK 3
+     */
     public function getCountries() {
         return json_decode( $this->request( $this->countries_url ) );
     }
 
+    /**
+     * TASK 3
+     */
     public function getShippingCost( $country_id, $quantity, $variant_id ) {
         $result = "";
 

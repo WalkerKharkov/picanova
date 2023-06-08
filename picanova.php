@@ -216,6 +216,9 @@ function add_usr_custom_session($product_name, $values, $cart_item_key ) {
     return $return_string;
 }
 
+/**
+ * TASK 2
+ */
 if ( ! function_exists( 'picanova_add_menu_page' ) ) {
     function picanova_add_menu_page() {
         global $picanova_changeable_options;
@@ -240,6 +243,9 @@ if ( ! function_exists( 'picanova_add_menu_page' ) ) {
     });
 }
 
+/**
+ * TASK 3
+ */
 if ( ! function_exists( 'picanova_package_rates' ) ) {
     function picanova_package_rates( $package_rates, $package ) {
         global $picanovaApi;

@@ -45,11 +45,17 @@ jQuery( function($) {
             }
         });
 
+        /**
+         * TASK 1
+         */
         $('body').on('woocommerce_variation_has_changed', function () {
             $priceEl = $(".woocommerce-variation-price .woocommerce-Price-amount.amount").children('bdi');
             base_variation_price = parseFloat($priceEl.text().replace(',', '.'));
         })
 
+        /**
+         * TASK 1
+         */
         $( "body" ).on("change", ".additional_options select", function() {
             var $selectedOptions = $('.additional_options').find('option:selected');
             var additional_price = 0;
