@@ -1,0 +1,17 @@
+
+.picanova_options__item label {
+    font-weight: 300;
+    font-size: 14px;
+    display: block;
+}
+
+.picanova_options__item label span {
+    width: 120px;
+    display: inline-block;
+}
+
+.picanova_options__item label select {
+    width: 50%;
+    margin-left: 20px;
+    border-color: #4d4d4d;
+}
